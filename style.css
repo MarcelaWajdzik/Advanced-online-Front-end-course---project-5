@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nav*/
+
+body {
+    height: 300vh;
+}
+
+.conteiner {
+    max-width: 1280px;
+    margin: auto;
+
+}
+
+.menu {
+    width: 300px;
+    height: 360px;
+    float: left;
+}
+
+.header {
+    float: left;
+    width: calc(100% - 300px);
+    height: 360px;
+    background-image: url(pianino.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.menu ul {
+    list-style-type: none;
+
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(92, 89, 89);
+    font-size: 1.5rem;
+    display: block;
+    line-height: 72px;
+    padding: 0 5px 0 30px;
+
+}
+
+
+.menu i {
+    border-right: 2px solid gray;
+    margin-right: 20px;
+    width: 70px;
+    transition: 0.4s;
+}
+
+.menu a:hover i {
+    margin-right: 40px;
+    color: #000;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+section {
+    margin-top: 10vh;
+    background-color: rgb(88, 86, 86);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .menu {
+        display: none;
+    }
+
+
+    .header {
+        width: 100%
+    }
+
+    .mobile {
+        display: block;
+        width: 10vh;
+        height: 100%;
+        background-color: #000;
+        position: fixed;
+    }
+
+
+    .mobile a {
+        display: block;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        height: 10vh;
+        margin-top: 4vh;
+        transform: 0.3;
+    }
+
+    .mobile li:nth-child(1) a:hover {
+        color: greenyellow;
+
+    }
+
+    .mobile li:nth-child(2) a:hover {
+        color: yellow;
+
+    }
+
+    .mobile li:nth-child(3) a:hover {
+        color: aqua;
+
+    }
+
+    .mobile li:nth-child(4) a:hover {
+        color: palevioletred;
+
+    }
+
+    .mobile li:nth-child(5) a:hover {
+        color: red;
+
+    }
+
+    .content {
+        font-size: 20px;
+        text-align: center;
+    }
+}
